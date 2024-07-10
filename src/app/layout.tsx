@@ -1,10 +1,10 @@
 "use client"
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Petrona } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Petrona({ subsets: ["latin"] });
 
  const metadata: Metadata = {
   title: "Harvard Portal",

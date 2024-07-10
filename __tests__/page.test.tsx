@@ -53,3 +53,4 @@ describe('Home Component', () => {
     // This might require additional logic to simulate or wait for asynchronous actions
   });
 });
+

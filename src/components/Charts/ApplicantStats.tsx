@@ -1,3 +1,4 @@
+//Charts
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import styles from './ApplicantStats.module.scss'; // Adjust the path as necessary
