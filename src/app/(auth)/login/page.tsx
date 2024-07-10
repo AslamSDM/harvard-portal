@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styles from './Login.module.scss';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -23,7 +24,15 @@ const Login: React.FC = () => {
   return (
     <div className={styles.loginContainer}>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
-        <h2>Harvard Admissions Portal Login</h2>
+      <Image
+              src={"/harvard.svg"}
+              alt="Harvard Logo"
+              objectFit="cover"
+              layout="responsive"
+              width={10}
+              height={5}
+            />
+        <h2>Login</h2>
         {error && <p className={styles.error}>{error}</p>}
         <div>
           <label htmlFor="username">Username:</label>

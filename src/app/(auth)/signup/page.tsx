@@ -5,6 +5,7 @@ import styles from './Signup.module.scss';
 import { signIn } from 'next-auth/react';
 import { z } from 'zod'; 
 import Email from 'next-auth/providers/email';
+import Image from 'next/image';
 
 const signupSchema = z.object({
   email: z.string().email('Invalid email address'),
@@ -57,7 +58,15 @@ const signupSchema = z.object({
   return (
     <div className={styles.SignupContainer}>
       <form onSubmit={handleSubmit} className={styles.SignupForm}>
-        <h2>Harvard Admissions Portal Signup</h2>
+      <Image
+              src={"/harvard.svg"}
+              alt="Harvard Logo"
+              objectFit="cover"
+              layout="responsive"
+              width={10}
+              height={5}
+            />
+        <h2>Signup</h2>
         {error && <p className={styles.error}>{error}</p>}
         <div>
           <label htmlFor="email">Email:</label>
@@ -98,6 +107,10 @@ const signupSchema = z.object({
             onChange={(e) => setconfirmPassword(e.target.value)}
             required
           />
+        </div>
+        <div className='already'>
+
+        <a  href="/login">Already have an account? Login</a>
         </div>
         <button type="submit">Sign Up</button>
       </form>
