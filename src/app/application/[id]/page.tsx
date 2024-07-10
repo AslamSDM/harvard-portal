@@ -1,5 +1,5 @@
 "use client";
-
+// For Application review form 
 import React, { useState, useEffect } from 'react';
 import styles from './ApplicationForm.module.scss';
 import { useParams, useRouter } from 'next/navigation';

@@ -6,7 +6,7 @@ import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metadata: Metadata = {
+ const metadata: Metadata = {
   title: "Harvard Portal",
 };
 
