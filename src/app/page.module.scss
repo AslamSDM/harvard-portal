@@ -1,0 +1,70 @@
+// src/pages/Home.module.scss
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #a51c30; // Harvard crimson
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+     nav {
+      margin-left: auto 
+    }
+    nav {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+  
+        li a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  .userInfo {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logoutButton {
+    background-color: white;
+    color: #a51c30;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  .footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+  }

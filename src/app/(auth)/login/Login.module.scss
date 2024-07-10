@@ -1,0 +1,65 @@
+// src/pages/Login.module.scss
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  color: #a51c30;
+}
+
+.loginForm {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+
+  h2 {
+    text-align: center;
+    color: #a51c30; // Harvard crimson
+    margin-bottom: 1.5rem;
+  }
+
+  div {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #a51c30; // Harvard crimson
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: darken(#a51c30, 10%);
+    }
+  }
+}
+.login {
+    margin-bottom: 1.5rem;
+
+}
+.error {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 1rem;
+}
