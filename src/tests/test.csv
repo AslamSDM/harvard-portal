@@ -1,5 +1,0 @@
-name,email,status,description,essay,
-Jane,jane@example.com,active,"Short description here","An essay text can go here.",
-Doe,doe@example.com,inactive,"Another description","More detailed essay text can be placed here.",
-Alex,alex@example.com,pending,"Description for Alex","Essay content for Alex.",
-Chris,chris@example.com,review,"Chris's description","Essay for Chris.",

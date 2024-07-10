@@ -12,7 +12,7 @@ export async function GET(){
         where: {email: session.user?.email??""}
     })
     if(!user || !user.isAdmin){
-        return {status: 401, body: {error: 'Unauthorized'}}
+        return Response.json({status: 401, body: {error: 'Unauthorized'}})
     }
     const files = await db.application.findMany()
     const csv = 'id,name,email,description,recomendations,status\n' + files.map(file => {

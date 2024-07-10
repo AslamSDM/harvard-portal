@@ -84,7 +84,7 @@ const Dashboard: React.FC = () => {
     if (file) {
       handleSubmit();
     }
-  }, [file]);
+  }, [file,handleSubmit]);
   console.log(applicants);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;

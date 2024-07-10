@@ -80,11 +80,26 @@ legend.append('text')
 
   }, [applicants]);
 
+  const color = d3.scaleOrdinal(d3.schemeCategory10);
   return (
     <div className={styles.chart}>
       <h2>Applicant Status Distribution</h2>
       <svg ref={chartRef} width="300" height="200"></svg>
+      <LegendComponent statusCounts={new Map()} color={color} />
+
     </div>
+  );
+};
+const LegendComponent = ({ statusCounts, color }: { statusCounts: Map<string, number>, color: (status: string) => string }) => {
+  return (
+    <g font-family="sans-serif" font-size={10} text-anchor="start">
+      {Array.from(statusCounts.keys()).map((status, i) => (
+        <g key={status} transform={`translate(0, ${i * 20})`}>
+          <rect x={0} width={19} height={19} fill={color(status)} />
+          <text x={24} y={9.5} dy="0.32em">{status}</text>
+        </g>
+      ))}
+    </g>
   );
 };
 

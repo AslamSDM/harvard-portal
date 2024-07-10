@@ -37,6 +37,9 @@
           }
         }
       }
+      @media (max-width: 768px) {
+        text-overflow: clip;
+      }
     }
   }
   
@@ -45,7 +48,12 @@
     margin-left: 2rem;
     align-items: center;
     gap: 1rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
+
   
   .logoutButton {
     background-color: white;
@@ -61,10 +69,16 @@
   .main {
     flex-grow: 1;
     padding: 2rem;
+    @media (max-width: 768px) {
+      padding: 0.5rem;
+    }
   }
   
   .footer {
     background-color: #f0f0f0;
     padding: 1rem;
     text-align: center;
+    @media (max-width: 768px) {
+      padding: 0.5rem;
+    }
   }
