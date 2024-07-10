@@ -1,4 +1,4 @@
-// src/components/Dashboard/Dashboard.tsx
+// Code for the Dashboard component
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import ApplicantStats from "../Charts/ApplicantStats";

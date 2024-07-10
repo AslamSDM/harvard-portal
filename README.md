@@ -19,6 +19,24 @@ This is an administration portal for Harvard's admissions department.
 
 The application is automatically deployed via GitLab CI/CD when changes are pushed to the main branch.
 
+## Directories
+
+
+/src/app/api : all the apis 
+
+    /api/applicants : gets all applications 
+    /api/applicant?id= : give specific applicants 
+    /api/applicant/update : updates status
+    /api/file/download : download csv
+    /api/file/upload : upload csv
+    /api/user/add : for signup
+
+/src/app/(auth)/ : has the login and signup forms
+
+/src/components/ : all the components 
+
+/src/lib/ : has the utils 
+
 ## Technologies Used
 
 - Nextjs
